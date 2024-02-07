@@ -281,7 +281,6 @@ input::file-selector-button:hover {
   flex-direction: column;
   width: var(--w-f);
   gap: 3rem;
-  align-items: flex-start;
 }
 .cmp {
   color: var(--light);
