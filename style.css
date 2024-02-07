@@ -1059,7 +1059,6 @@ input::file-selector-button:hover {
     font-size: 4vw;
   }
   .nav {
-    background-color: var(--drk) !important;
     gap: 25px;
     justify-content: center;
   }
