@@ -1129,10 +1129,6 @@ input::file-selector-button:hover {
     min-width: 348px;
     width: 348px;
   }
-  .skl-crd-hld,
-  .crd-sc {
-    justify-content: flex-start;
-  } 
   .skls-hro {
     position: absolute;
     bottom: 27%;
