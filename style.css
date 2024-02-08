@@ -14,7 +14,7 @@ body {
 :root {
   --bg: #171717;
   --drk: #333;
-  --w-f: -webkit-fill-available;
+  --w-f: 100%;
   --round-one: #00ff00;
   --round-two: #00c0b5;
   --light: var(--white);
