@@ -1181,6 +1181,8 @@ input::file-selector-button:hover {
 @media only screen and (max-width: 1280px) {
   .hro-ctt {
     height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
   .srv-crd {
     min-width: 500px;
