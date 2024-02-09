@@ -1178,7 +1178,8 @@ input::file-selector-button:hover {
     width: 319px;
   }
 }
-@media only screen and (max-width: 1280px) {
+
+@media only screen and (min-width: 1280px) {
   .hro-ctt {
     height: 100vh;
     justify-content: space-around;
