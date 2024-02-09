@@ -1467,6 +1467,11 @@ input::file-selector-button:hover {
   .lft-inr {
     gap: 6rem;
   }
+  .cmp-t {
+    font-size: 1.8rem;
+    bottom: 10px !important;
+    padding: 0px 0px 0px 20px;
+  }
 }
 @media only screen and (max-width: 800px) and (min-width: 375px) and (orientation: landscape) {
   .lft-inr {
