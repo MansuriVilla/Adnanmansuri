@@ -1386,7 +1386,7 @@ input::file-selector-button:hover {
 
 @media only screen and (max-width: 800px) and (min-width: 375px) {
   .hro-inr {
-    padding: 18% 0px 0px 0px;
+    padding: 35% 0px 0px 0px;
     position: relative;
   }
   .skl-crd-hld,
@@ -1458,10 +1458,22 @@ input::file-selector-button:hover {
     height: 100vh;
     position: relative;
   }
+  .txt-title {
+    font-size: 4rem;
+  }
+  .txt-pra {
+    font-size: 14px;
+  }
+  .lft-inr {
+    gap: 6rem;
+  }
 }
 @media only screen and (max-width: 800px) and (min-width: 375px) and (orientation: landscape) {
+  .lft-inr {
+    gap: 3rem;
+  }
   .hro-inr {
-    padding: 35% 0px 0px 0px;
+    padding: 10% 0px 0px 0px;
   }
   .pra {
     max-width: 90%;
@@ -1473,15 +1485,7 @@ input::file-selector-button:hover {
   .skls-inr {
     overflow: visible;
   }
-  .txt-title {
-    font-size: 4rem;
-  }
-  .txt-pra {
-    font-size: 14px;
-  }
-  .lft-inr {
-    gap: 6rem;
-  }
+
   .skls-li {
     padding: 10px;
     border-right: 0px solid transparent;
