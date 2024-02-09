@@ -1465,6 +1465,7 @@ input::file-selector-button:hover {
     gap: 6rem;
   }
   .cmp-t {
+    width: fit-content;
     font-size: 1.66rem;
     bottom: 10px !important;
     padding: 0px 0px 0px 20px;
@@ -1506,6 +1507,7 @@ input::file-selector-button:hover {
   .cmp-t {
     font-size: 1.8rem;
     bottom: 10px !important;
+    width: fit-content;
     padding: 0px 0px 0px 20px;
   }
   .shcs-ul {
