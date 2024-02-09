@@ -1461,7 +1461,7 @@ input::file-selector-button:hover {
 }
 @media only screen and (max-width: 800px) and (min-width: 375px) and (orientation: landscape) {
   .hro-inr {
-    padding: 11% 0px 0px 0px;
+    padding: 35% 0px 0px 0px;
   }
   .pra {
     max-width: 90%;
@@ -1473,6 +1473,15 @@ input::file-selector-button:hover {
   .skls-inr {
     overflow: visible;
   }
+  .txt-title {
+    font-size: 4rem;
+  }
+  .txt-pra {
+    font-size: 14px;
+  }
+  .lft-inr {
+    gap: 6rem;
+  }
   .skls-li {
     padding: 10px;
     border-right: 0px solid transparent;
@@ -1483,8 +1492,9 @@ input::file-selector-button:hover {
     border-bottom: 0px solid var(--light);
   }
   .cmp-t {
-    font-size: 2.2rem;
-    bottom: 5px;
+    font-size: 1.8rem;
+    bottom: 10px !important;
+    padding: 0px 0px 0px 20px;
   }
   .shcs-ul {
     grid-template-columns: repeat(auto-fill, 300px);
