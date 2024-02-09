@@ -1178,3 +1178,20 @@ input::file-selector-button:hover {
     width: 319px;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .hro-ctt {
+    height: 100vh;
+  }
+  .srv-crd {
+    min-width: 500px;
+  }
+  .skl-crd {
+    height: 520px;
+    width: 500px;
+  }
+  .ddrf {
+    height: 320px;
+    align-items: center;
+    justify-content: center;
+  }
+}
