@@ -164,7 +164,7 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-wrap: wrap !important;
-  flex-wrap: wrap !important;
+  flex-wrap: nowrap !important;
   gap: 50px;
   padding: 10px !important;
   background-color: var(--drk);
@@ -460,8 +460,8 @@ input::file-selector-button:hover {
   filter: blur(40px);
 }
 .top-w {
-  -ms-flex-flow: wrap;
-  flex-flow: wrap;
+  -ms-flex-flow: nowrap;
+  flex-flow: nowrap;
 }
 
 .txt-up {
