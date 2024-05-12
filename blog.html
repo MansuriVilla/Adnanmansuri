@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+      .post {
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      .post img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Travel Blog</h1>
+    </header>
+    <div id="blog-posts" class="container"></div>
+
+    <script>
+      // Fetch travel blog posts from Contentful API
+      function fetchTravelBlogPosts() {
+        const SPACE_ID = "YOUR_CONTENTFUL_SPACE_ID";
+        const ACCESS_TOKEN =
+          "fdb4e7a3102747a02ea69ebac5e282b9e44d28fb340f778a4f5e788625a61abe";
+        const URL = `https://cdn.contentful.com/spaces/${SPACE_ID}/entries?access_token=${ACCESS_TOKEN}&content_type=blogPost&locale=en-US`;
+
+        fetch(URL)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            displayTravelBlogPosts(data);
+          })
+          .catch((error) => {
+            console.error("Error fetching travel blog posts:", error);
+          });
+      }
+
+      // Display travel blog posts on the webpage
+      function displayTravelBlogPosts(data) {
+        const blogPostsContainer = document.getElementById("blog-posts");
+
+        data.items.forEach((item) => {
+          const postElement = document.createElement("div");
+          postElement.classList.add("post");
+
+          const title = document.createElement("h2");
+          title.textContent = item.fields.title;
+
+          const content = document.createElement("p");
+          content.textContent = item.fields.content;
+
+          postElement.appendChild(title);
+          postElement.appendChild(content);
+
+          blogPostsContainer.appendChild(postElement);
+        });
+      }
+
+      // Fetch random image from Unsplash API
+      function fetchRandomImage() {
+        const UNSPLASH_ACCESS_KEY =
+          "TdnZOkQBkGDYsWHRBFYyqrBLfDxydu3cEkjgpRYsvqM";
+        const URL = `https://api.unsplash.com/photos/random?client_id=${UNSPLASH_ACCESS_KEY}`;
+
+        fetch(URL)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            displayRandomImage(data);
+          })
+          .catch((error) => {
+            console.error("Error fetching random image:", error);
+          });
+      }
+
+      // Display random image on the webpage
+      function displayRandomImage(data) {
+        const blogPostsContainer = document.getElementById("blog-posts");
+
+        const image = document.createElement("img");
+        image.src = data.urls.regular;
+        image.alt = "Random Travel Image";
+
+        blogPostsContainer.insertBefore(image, blogPostsContainer.firstChild);
+      }
+
+      // Call fetchTravelBlogPosts and fetchRandomImage functions when the DOM content is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        fetchTravelBlogPosts();
+        fetchRandomImage();
+      });
+    </script>
+  </body>
+</html>
