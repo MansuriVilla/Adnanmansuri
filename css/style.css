@@ -688,11 +688,9 @@ input::file-selector-button:hover {
   width: 100%;
   max-height: 90px;
   height: 100%;
+  margin-bottom: 20px;
 }
 .slider .slide-track .slide .skills-slider .skill-icon img {
-  /* margin: 20px 0px; */
-  height: 100%;
-  width: 100%;
   object-fit: contain;
 }
 .slider .slide-track .slide .skills-slider .img-tlt {
@@ -802,6 +800,46 @@ input::file-selector-button:hover {
   margin-top: 50px;
   width: 100%;
 }
+
+.card-main .card-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+}
+
+.cards .card-inner .card-content .content-main .content-li.title {
+  font-size: 20px;
+  font-weight: 900;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.cards .card-inner .card-content .content-main .content-li {
+  color: #fff;
+  padding: 0px;
+  font-size: 18px;
+  list-style: disc;
+}
+
+.show-content .card-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.5s ease;
+}
+.cards.show-content .card-inner .card-icon {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.cards.show-content .card-inner .card-plus .plus-icon img {
+  rotate: 45deg;
+}
+.cards .card-inner .card-icon {
+  transition: all 0.5s ease;
+}
 .card-main .card-main-inner {
   display: flex;
   gap: 20px;
@@ -816,6 +854,10 @@ input::file-selector-button:hover {
   border-radius: 30px;
   padding: 10px;
   margin: 20px 0px;
+}
+.card-main .card-main-inner .cards .card-inner {
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -831,6 +873,7 @@ input::file-selector-button:hover {
 .card-main .card-main-inner .cards .card-inner .card-icon button img {
   max-height: 150px;
   height: 100%;
+  transition: all 0.5s ease;
 }
 .card-main .card-main-inner .cards .card-inner .card-plus {
   position: absolute;
@@ -853,6 +896,7 @@ input::file-selector-button:hover {
 .card-main .card-main-inner .cards .card-inner .card-plus .plus-icon img {
   height: 100%;
   width: 100%;
+  transition: all 0.5s ease;
 }
 .card-main .card-main-inner .cards .card-inner .card-plus .plus-icon .plus-gra {
   height: 20px;

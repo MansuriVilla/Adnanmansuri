@@ -242,3 +242,14 @@ function cloneText() {
 
 // Clone all slides initially
 cloneText();
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".cards");
+
+  cards.forEach(function (card) {
+    card.addEventListener("click", function () {
+      this.classList.toggle("show-content");
+    });
+  });
+});
+
+
