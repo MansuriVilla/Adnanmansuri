@@ -7,24 +7,6 @@ function setupScrollTriggerAnimation() {
       scrub: 1,
     },
   });
-
-  tl.to(".nav", {
-    backdropFilter: "blur(10px)",
-    // height: "70px",
-    overflow: "hidden",
-    backgroundColor: "#00000030",
-  })
-    .to(".cmp", {
-      top: "-100px",
-      opacity: "0",
-      display: "none",
-    })
-    .to(".cmp-t", {
-      opacity: "1",
-      display: "flex",
-      justifyContent: "center",
-      width: "auto",
-    });
 }
 
 // Detect if a link's href goes to the current page
@@ -251,5 +233,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
