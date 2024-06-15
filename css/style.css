@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: var(--bg) !important;
+  background-color: #000 !important;
 }
 :root {
   --bg: #171717;
@@ -340,6 +340,30 @@ input::file-selector-button:hover {
   height: 12px;
   margin-left: 10px;
 }
+.header.navbar .container-fluid.navbar-inner .off-canvas.show,
+.header.navbar .container-fluid.navbar-inner .off-canvas.showing {
+  padding: 5%;
+}
+.header.navbar .container-fluid.navbar-inner .off-canvas.show .offcanvas-header,
+.header.navbar
+  .container-fluid.navbar-inner
+  .off-canvas.showing
+  .offcanvas-header,
+.header.navbar .container-fluid.navbar-inner .off-canvas.show .off-canvas-body,
+.header.navbar
+  .container-fluid.navbar-inner
+  .off-canvas.showing
+  .off-canvas-body {
+  padding: 0px;
+}
+.header.navbar .container-fluid.navbar-inner button {
+  box-shadow: 0px 0px;
+}
+.header.navbar .container-fluid.navbar-inner .navbar-toggler {
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 32px;
+}
 /* Header css end */
 .hro-ctt {
   padding: 70px 0px 0px;
@@ -596,7 +620,6 @@ input::file-selector-button:hover {
   margin: auto;
   position: relative;
   width: 100%;
-  background-color: #1b1b1b;
   overflow: hidden;
 }
 
@@ -613,12 +636,12 @@ input::file-selector-button:hover {
   user-select: none;
 }
 .slider .slide-track .slide .highlight {
-  background: linear-gradient(90deg, var(--round-one), var(--round-two));
+  background: url(../assets/icons/text-bg.svg) center left / cover no-repeat;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 .slider .slide-track .slide p {
-  font-size: 4rem;
+  font-size: 10rem;
   text-wrap: nowrap;
   margin: 0px;
   text-transform: uppercase;
