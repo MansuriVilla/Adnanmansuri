@@ -8,7 +8,8 @@ function setupScrollTriggerAnimation() {
     },
   });
 }
-
+  // Initialize ScrollTrigger animation
+  setupScrollTriggerAnimation();
 // Detect if a link's href goes to the current page
 function getSamePageAnchor(link) {
   if (
@@ -144,8 +145,7 @@ particlesJS("particles-js", {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize ScrollTrigger animation
-  setupScrollTriggerAnimation();
+
 
   // Initialize cursor
   let mouseCursor = document.querySelector(".cursor");
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function cloneText() {
   const slideTrack = document.querySelector(".slide-track");
-  const slides = slideTrack.querySelectorAll(".slide"); // Select all slides
+  const slides = slideTrack.querySelectorAll(".slide");
   slides.forEach((slide) => {
     const clonedSlide = slide.cloneNode(true);
     slideTrack.appendChild(clonedSlide);

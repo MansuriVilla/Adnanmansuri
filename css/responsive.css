@@ -1,0 +1,274 @@
+@media only screen and (max-width: 1100px) and (min-width: 220px) {
+
+    .inp,
+    .w,
+    .s,
+    .lbl,
+    .rgt-scc {
+      width: 100%;
+    }
+  
+    .hro-inr {
+      flex-wrap: wrap !important;
+    }
+  
+    .rgt-scc {
+      margin-top: 30px;
+    }
+  
+    .lft-s {
+      margin-left: 27px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 575px) and (min-width: 220px) {
+    .top-w {
+      flex-wrap: wrap;
+      gap: 0rem !important;
+    }
+  
+    .bug-ul,
+    .bug-li,
+    .bug-txt,
+    .sub-inr {
+      width: 100%;
+    }
+  
+    .bug-min-ul,
+    .bug-inr {
+      flex-wrap: wrap;
+    }
+  
+    .slider .slide-track .slide p {
+      font-size: 3rem;
+    }
+  
+    .bug {
+      margin: 15px 0px;
+    }
+  
+    .sub {
+      width: 100%;
+      margin: 15px 0px;
+    }
+  
+    .rgt-scc {
+      padding: 20px;
+    }
+  
+    .rgt-txt,
+    .ds {
+      font-size: 2rem;
+    }
+  
+    .lft-s {
+      width: 100%;
+      margin: 0px 0px 0px 0px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .git-inr {
+      width: 95%;
+    }
+  
+    .ftr-rgt-inr {
+      gap: 4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) and (min-width: 220px) {
+    .hro-inr {
+      padding: 35% 0px 0px 0px;
+      position: relative;
+    }
+  
+    .skl-crd-hld,
+    .crd-sc {
+      justify-content: center;
+    }
+  
+    .pra {
+      max-width: 380px;
+    }
+  
+    .skls-ul {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  
+    .skls-inr {
+      overflow: visible;
+    }
+  
+    .skls-li {
+      padding: 10px;
+      border-right: 0px solid transparent;
+      border-bottom: 3px solid var(--light);
+    }
+  
+    .skls-li:nth-last-child(1) {
+      border-right: 0px solid transparent;
+      border-bottom: 0px solid var(--light);
+    }
+  
+    .shcs-ul {
+      grid-template-columns: repeat(auto-fill, 320px);
+    }
+  
+    .git-info-inr {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  
+    .git-inr {
+      width: 100%;
+    }
+  
+    .git-info {
+      width: 90%;
+    }
+  
+    .ftr-inr {
+      justify-content: center;
+    }
+  
+    .ftr-rgt-inr {
+      justify-content: center;
+    }
+  
+    .ccd {
+      text-align: center;
+    }
+  
+    .srv-crd,
+    .skl-crd {
+      min-width: 348px;
+      width: 348px;
+    }
+  
+    .skls-hro {
+      position: absolute;
+      bottom: 27%;
+    }
+  
+    .hro-ctt {
+      position: relative;
+    }
+  
+    .txt-title {
+      font-size: 4rem;
+    }
+  
+    .txt-pra {
+      font-size: 14px;
+    }
+  
+    .lft-inr {
+      gap: 6rem;
+    }
+  
+    .cmp-t {
+      width: fit-content !important;
+      font-size: 1.66rem;
+      bottom: 10px !important;
+      padding: 0px 0px 0px 20px;
+    }
+  
+    .cmp-nam {
+      justify-content: flex-start !important;
+    }
+  
+    .project-card-section .project-card-inner .project-card,
+    .card-main .card-main-inner .cards {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) and (min-width: 220px) and (orientation: landscape) {
+    .lft-inr {
+      gap: 3rem;
+    }
+  
+    .cmp-nam {
+      justify-content: flex-start !important;
+    }
+  
+    .hro-inr {
+      padding: 10% 0px 0px 0px;
+    }
+  
+    .pra {
+      max-width: 90%;
+    }
+  
+    .skls-ul {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  
+    .skls-inr {
+      overflow: visible;
+    }
+  
+    .skls-li {
+      padding: 10px;
+      border-right: 0px solid transparent;
+      border-bottom: 3px solid var(--light);
+    }
+  
+    .skls-li:nth-last-child(1) {
+      border-right: 0px solid transparent;
+      border-bottom: 0px solid var(--light);
+    }
+  
+    .cmp-t {
+      font-size: 1.8rem;
+      bottom: 10px !important;
+      width: fit-content !important;
+      padding: 0px 0px 0px 20px;
+    }
+  
+    .shcs-ul {
+      grid-template-columns: repeat(auto-fill, 300px);
+    }
+  
+    .txts {
+      font-size: 2.8rem;
+    }
+  
+    .skl-crd-hld,
+    .crd-sc {
+      justify-content: flex-start;
+    }
+  
+    .srv-crd,
+    .skl-crd {
+      min-width: 319px;
+      width: 319px;
+    }
+  }
+  
+  @media only screen and (min-width: 1920px) {
+    .hro-ctt {
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 0px;
+    }
+  
+    .srv-crd {
+      min-width: 500px;
+      height: 520px;
+    }
+  
+    .skl-crd {
+      height: 520px;
+      width: 500px;
+    }
+  
+    .cards {
+      height: 320px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
