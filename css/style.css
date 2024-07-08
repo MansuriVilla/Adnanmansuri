@@ -264,13 +264,32 @@ body {
 
 .header.navbar .container-fluid.navbar-inner .off-canvas .off-canvas-body .off-ul {
   justify-content: center;
+  gap: 15px;
 }
 
 .header.navbar .container-fluid.navbar-inner .off-canvas .off-canvas-body .off-ul .off-li a {
   padding: 0px 15px;
   color: #fff;
+  position: relative;
 }
-
+.header.navbar .container-fluid.navbar-inner .off-canvas .off-canvas-body .off-ul .off-li a::after,.footer .footer-inner .footer-right .navigation-footer ul li a::after, .footer .footer-inner .footer-right .details a::after,.footer .footer-inner .footer-bottom .custom-container a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 40px;
+  transform: scaleX(0);
+  left: 0px;
+  bottom: -6px;
+  transform-origin:right ;
+  transition: transform .5s ease;
+  
+}
+.header.navbar .container-fluid.navbar-inner .off-canvas .off-canvas-body .off-ul .off-li a:hover:after,.footer .footer-inner .footer-right .navigation-footer ul li a:hover::after, .footer .footer-inner .footer-right .details a:hover::after,.footer .footer-inner .footer-bottom .custom-container a:hover::after{
+  transform-origin:left ;
+  transform: scaleX(1);
+}
 .header.navbar .container-fluid.navbar-inner .off-canvas .off-canvas-body .project-button .project-button-a a {
   border-radius: 50px;
   padding: 15px 30px;
@@ -580,7 +599,7 @@ body {
   font-weight: 500;
   max-width: 1010px;
   text-align: center;
-  font-family: nexa-extralight  ;
+  font-family:nexa-extralight;
 }
 
 .slider-text {
@@ -985,7 +1004,7 @@ body {
 
 .footer .footer-inner .footer-right h5{margin-bottom: 30px !important; color: #fff; font-weight: 600; font-family: nexa-heavy;}
 .footer .footer-inner .footer-right .navigation-footer ul li a,
-.footer .footer-inner .footer-right .details a{ color: #fff; font-family: nexa-extralight; font-weight: 600;}
+.footer .footer-inner .footer-right .details a{ color: #fff; font-family: nexa-extralight; font-weight: 600; position: relative;}
 
 .footer .footer-inner .footer-right .navigation-footer ul li,.footer .footer-inner .footer-right .details .details-content{margin-bottom: 15px;}
 
@@ -1003,6 +1022,7 @@ body {
 }
 .footer .footer-inner .footer-bottom .custom-container a{
   color: #fff;
+  position: relative;
 }
 
 /* footer css end */
