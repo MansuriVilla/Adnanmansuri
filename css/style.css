@@ -368,6 +368,7 @@ body {
   -o-transition: 0.2s;
   transition: 0.2s;
   color: var(--light);
+  font-weight: 700;
 }
 
 .txt-up {
