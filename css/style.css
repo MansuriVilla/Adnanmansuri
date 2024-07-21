@@ -1044,6 +1044,8 @@ body {
 .footer .footer-inner .footer-bottom .custom-container {
   padding: 20px 0px;
   color: #fff;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .footer .footer-inner .footer-bottom .custom-container a {
