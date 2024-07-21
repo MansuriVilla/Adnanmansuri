@@ -769,11 +769,7 @@ body {
 #services,
 #projects,
 #skills {
-  scroll-margin-top: 100px;
-}
-
-.srv-min-bg {
-  margin-top: 40px;
+  scroll-margin-top: 1000px;
 }
 
 .srv-tlt-txt,
