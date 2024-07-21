@@ -782,8 +782,8 @@ body {
 }
 
 .srv-tlt-txt,
-.project-title,
-.shcs-txt {
+.project-title h2,
+.shcs-txt h2 {
   text-align: center;
   color: #fff;
   font-size: 52px;
