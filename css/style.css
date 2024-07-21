@@ -788,7 +788,7 @@ body {
   color: #fff;
   font-size: 52px;
   font-family: nexa-heavy;
-  margin-bottom: 100px;
+  margin-bottom: 32px !important;
 }
 
 .card-main {
