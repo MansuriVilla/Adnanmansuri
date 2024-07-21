@@ -781,13 +781,14 @@ body {
   margin-top: 40px;
 }
 
-.srv-tlt-txt,
-.project-title,
+.srv-tlt-txt h2,
+.project-title h2,
 .shcs-txt h2 {
   text-align: center;
   color: #fff;
-  font-size: 42px;
+  font-size: 52px;
   font-family: nexa-heavy;
+  margin-bottom: 100px;
 }
 
 .card-main {
