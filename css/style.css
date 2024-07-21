@@ -490,13 +490,6 @@ body {
   height: 100vh;
 }
 
-.lft-inr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-}
-
 .cv {
   position: relative;
 }
@@ -590,6 +583,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 60px;
 }
 
 .txt {
