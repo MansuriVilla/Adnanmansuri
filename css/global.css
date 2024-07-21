@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* basic styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+button {
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+}
+
+ul {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--frm);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* basic styles end */
+input::-webkit-file-upload-button {
+    background-color: #00000030;
+    color: var(--white);
+    outline: 0;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-right: 20px;
+    border: 0px solid var(--white);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  input::file-selector-button {
+    background-color: #00000030;
+    color: var(--white);
+    outline: 0;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-right: 20px;
+    border: 0px solid var(--white);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  input::-webkit-file-upload-button:hover {
+    background-color: #00000080;
+  }
+  
+  input::file-selector-button:hover {
+    background-color: #00000080;
+  }
