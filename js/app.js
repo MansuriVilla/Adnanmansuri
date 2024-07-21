@@ -8,8 +8,8 @@ function setupScrollTriggerAnimation() {
     },
   });
 }
-  // Initialize ScrollTrigger animation
-  setupScrollTriggerAnimation();
+// Initialize ScrollTrigger animation
+setupScrollTriggerAnimation();
 // Detect if a link's href goes to the current page
 function getSamePageAnchor(link) {
   if (
